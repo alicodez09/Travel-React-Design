@@ -1,0 +1,93 @@
+.destination{
+    margin: 4rem 6rem;
+  
+}
+.destination h1{
+    font-size: 3rem;
+}
+.first-desc{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 4rem;
+}
+.first-desc-reverse{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: space-between;
+margin-top: 4rem;
+}
+.desc-text{
+    width: 45%;
+    font-size: 1.1rem;
+    text-align: start !important;
+}
+
+.desc-text h2{
+    padding-bottom: 1.1rem;
+}
+.image{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: -99;
+}
+.image img{
+    width: 49%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width:850px) {
+    .destination{
+        margin: 4rem 2rem !important;
+    }
+    /* There is an importantt thingggg below check */
+    .first-desc{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+      
+        margin-top: 4rem !important;
+    }
+    .first-desc-reverse{
+            display: flex !important;
+            flex-direction: column-reverse !important;
+          
+            margin-top: 4rem !important;
+
+        }
+        .desc-text{
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .image{
+            width: 100%;
+        }
+        .image img{
+            height: 250px;
+        }
+}
+.animated{
+    animation: up-down 1.5s ease-in-out infinite alternate-reverse both !important;
+}
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
